@@ -13,6 +13,9 @@ function App() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/hero-index' element={<HerosIndex />} /> 
+                <Route path='/abilities'>
+                    
+                </Route>
             </Routes>
         </div>
     );

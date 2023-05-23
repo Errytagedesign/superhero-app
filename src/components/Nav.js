@@ -1,7 +1,12 @@
+import { Link } from 'react-router-dom'
+
+
+
 function Nav () {
     return (
         <nav>
-            Links form my nav
+            <Link to='/'>Home</Link>
+            <Link to='/hero-index'>Heros Index</Link>
         </nav>
     )
 }
