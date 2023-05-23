@@ -2,6 +2,7 @@ import './App.css';
 import Nav from './components/Nav';
 import Home from './pages/Home';
 import HerosIndex from './pages/HerosIndex';
+import HerosShow from './pages/HerosShow';
 import { Route, Routes } from 'react-router-dom'
 
 
@@ -13,8 +14,9 @@ function App() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/hero-index' element={<HerosIndex />} /> 
-                <Route path='/abilities'>
-                    
+                <Route path='/powerstats'>
+                  <Route path='symbol' element={<HerosShow />} />
+
                 </Route>
             </Routes>
         </div>
