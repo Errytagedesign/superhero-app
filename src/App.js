@@ -3,7 +3,7 @@ import Nav from './components/Nav';
 import Home from './pages/Home';
 import HerosIndex from './pages/HerosIndex';
 import HerosShow from './pages/HerosShow';
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
