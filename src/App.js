@@ -13,15 +13,16 @@ function App() {
             <h1>Superhero App</h1>
             <Routes>
                 <Route path='/' element={<Home />} />
-                <Route path='/hero-index' element={<HerosIndex />} /> 
+                <Route path='/hero-index' element={<HerosIndex />} />
                 <Route path='/powerstats'>
                   <Route path='symbol' element={<HerosShow />} />
-
+ 
+ 
                 </Route>
             </Routes>
         </div>
     );
-  
-}
+ }
+ 
 
 export default App;
