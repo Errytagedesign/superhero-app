@@ -13,7 +13,7 @@ function App() {
     const fetchHeroes = async () => {
       try {
         const response = await fetch(
-          `http://superheroapi.com/api/${process.env.REACT_APP_API_KEY}/search/batman`,
+          `https://superheroapi.com/api/${process.env.REACT_APP_API_KEY}/search/batman`,
           { headers: { "Access-Control-Allow-Origin": "*", Accept: "*/*", "Access-Control-Allow-Methods": "GET, OPTIONS, POST, PUT"} }
         );
         const data = await response.json();
