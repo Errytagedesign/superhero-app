@@ -1,6 +1,6 @@
 function BreweriesIndex() {
     return(
-        <h2>Breweries list </h2>
+        <h2>Breweries list</h2>
     )
 }
 
