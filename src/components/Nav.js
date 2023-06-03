@@ -6,7 +6,7 @@ function Nav () {
     return (
         <nav>
             <Link to='/'>Home</Link>
-            <Link to='/hero-index'>Heros Index</Link>
+            <Link to='/hero-index'>Breweries Index</Link>
         </nav>
     )
 }
