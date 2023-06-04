@@ -1,8 +1,10 @@
 function Home() {
     return(
         <>
-            <h2>Homepage</h2>
-            <p>Welcome to my app! Here are a list of Breweries for you to explore and learn about!</p>
+            
+            <p>Welcome to Brewerie Buddy! Here you will be able to explore Breweries and find out all that wonderful information about them. This is your one stop shop for any and all information about Breweries all over the Country!
+            </p>
+            
             <button></button>
         </>
     )

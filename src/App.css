@@ -3,7 +3,7 @@
 }
 
 nav {
-    background-color: rgb(0,0,0,0.5) ;
+    background-color: rgb(0,0,0,0.8) ;
     display: flex;
     justify-content: space-evenly;
     text-decoration: none;
@@ -14,21 +14,24 @@ nav {
 body { 
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-image: url(https://free4kwallpapers.com/uploads/originals/2015/10/03/astronaut-drinks-beer-humor.jpg);
-    background-size: cover ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url(https://wallpapercrafter.com/desktop/294439-beer-fathers-day-drink-refreshment-beverage.jpg);
     background-size: 90em;
 
 }
 p {
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.8);
     font-size: 2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: whitesmoke;
+    color: deepskyblue;
+    text-align: center;
+    margin-left: 4em;
+    margin-right: 4em;
 }
 
 h1,h2{
-    color: whitesmoke;
+    color:deepskyblue ;
+    background-color: rgb(0, 0, 0, 0.8);
+    font-size: 7em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
