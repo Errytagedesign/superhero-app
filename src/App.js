@@ -8,15 +8,16 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [breweries, setBreweries] = useState([]);
-console.log(breweries)
+  // console.log(breweries);
+
   useEffect(() => {
     const fetchBreweries = async () => {
       try {
         const response = await fetch(
-          `https://api.openbrewerydb.org/v1/breweries?per_page=20`,
+          `https://api.openbrewerydb.org/v1/breweries?per_page=20`
         );
         const data = await response.json();
-        setBreweries(data)
+        setBreweries(data);
       } catch (error) {
         console.log("No data from API:", error);
       }
@@ -27,13 +28,19 @@ console.log(breweries)
   return (
     <div className="App">
       <Nav />
-      <h1>Breweries Buddy</h1>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/BreweriesIndex" element={<BreweriesIndex />} />
-        <Route path="/powerstats">
-          <Route path="symbol" element={<BreweriesShow />} />
-        </Route>
+        <Route
+          path="/breweriesIndex"
+          element={
+            // Send the API call data as props down to brewriesindex components
+            <BreweriesIndex breweries={breweries} />
+          }
+        />
+        <Route
+          path="/:brewId"
+          element={<BreweriesShow breweries={breweries} />}
+        />
       </Routes>
     </div>
   );
